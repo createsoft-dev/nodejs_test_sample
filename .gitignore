@@ -4,3 +4,4 @@ node_modules
 /esmodule_sample/func.js
 /esmodule_sample/main.js
 /esmodule_sample/bin/www.js
+/esmodule_sample/app.test.js
