@@ -6,6 +6,7 @@ const app = express();
 const router = express.Router();
 
 router.get('/', (req, res) => {
+    debugger;
     res.send('hello world')
 });
 

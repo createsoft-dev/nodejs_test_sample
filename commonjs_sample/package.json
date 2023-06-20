@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "run": "node bin/www.js",
+    "debug": "node --inspect bin/www.js",
     "test": "jest"
   },
   "author": "",
