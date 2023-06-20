@@ -1,0 +1,16 @@
+{
+  "name": "esmodule_sample",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type":"module",
+  "scripts": {
+    "run": "node main.js",
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^29.5.0"
+  }
+}
