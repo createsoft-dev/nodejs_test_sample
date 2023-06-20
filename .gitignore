@@ -1,2 +1,6 @@
 .idea
 node_modules
+/esmodule_sample/app.js
+/esmodule_sample/func.js
+/esmodule_sample/main.js
+/esmodule_sample/bin/www.js
