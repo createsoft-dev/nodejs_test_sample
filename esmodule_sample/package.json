@@ -5,13 +5,14 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "run": "node main.js",
+    "run": "node bin/www.js",
     "test": "jest"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "esbuild-jest": "^0.5.0",
+    "express": "^4.18.2",
     "jest": "^29.5.0"
   }
 }
