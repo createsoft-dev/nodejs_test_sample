@@ -1,5 +1,5 @@
 import {describe, it, expect} from "@jest/globals";
-import {add, add_async} from "./func.js";
+import {add, add_async} from "../func.js";
 
 describe('math', (): void => {
     it('add', (): void => {

@@ -1,6 +1,6 @@
 import request from "supertest";
 import {describe, it, expect, test, afterAll} from "@jest/globals";
-import {app} from './app';
+import {app} from '../app';
 
 
 describe('express rendering', () => {
