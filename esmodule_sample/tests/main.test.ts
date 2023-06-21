@@ -1,5 +1,5 @@
 import {describe, it, expect} from "@jest/globals";
-import {add, add_async} from "../func.js";
+import {add, add_async, div_async} from "../func";
 
 describe('math', (): void => {
     it('add', (): void => {
@@ -8,5 +8,15 @@ describe('math', (): void => {
 
     it('add async', (): void => {
         expect(add_async(1, 2)).resolves.toBe(3);
+    });
+
+    it('div async', (): void => {
+        expect(div_async(1, 2)).resolves.toBe(0.5);
+    });
+
+    it('async 0 division is rejected', (): void => {
+        expect(div_async(1, 0)).rejects.toThrow(
+            'zero division',
+        );
     });
 });
