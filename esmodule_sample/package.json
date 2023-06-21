@@ -5,7 +5,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "run": "node bin/www.js",
+    "run": "node out/bin/www.js",
     "test": "jest",
     "tsc": "tsc",
     "watch": "tsc --watch"
