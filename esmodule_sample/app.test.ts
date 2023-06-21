@@ -1,5 +1,5 @@
 import request from "supertest";
-import {describe, it, expect, afterAll} from "@jest/globals";
+import {describe, it, expect, test, afterAll} from "@jest/globals";
 import {app} from './app';
 
 
@@ -33,3 +33,7 @@ describe('express rendering', () => {
         app.locals.settings.redis.quit();
     });
 });
+
+describe('check jest api', () => {
+    test.todo('test.todo()は将来こんなテストを書きたいので枠としてカウントする時に使う')
+})
