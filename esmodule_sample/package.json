@@ -14,7 +14,8 @@
   "license": "ISC",
   "dependencies": {
     "esbuild-jest": "^0.5.0",
-    "express": "^4.18.2"
+    "express": "^4.18.2",
+    "ioredis": "^5.3.2"
   },
   "devDependencies": {
     "@jest/globals": "^29.5.0",
