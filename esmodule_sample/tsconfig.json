@@ -107,7 +107,7 @@
     "skipLibCheck": true                                 /* Skip type checking all .d.ts files. */
   },
   "exclude": [
-//    "main.test.ts",
+//    "math.test.ts",
     "jest.config.ts"
   ]
 }
