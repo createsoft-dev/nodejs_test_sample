@@ -1,5 +1,5 @@
 import request from "supertest";
-import {describe, it, expect} from "@jest/globals";
+import {describe, it, expect, afterAll} from "@jest/globals";
 import {app} from './app';
 
 
@@ -27,7 +27,9 @@ describe('express rendering', () => {
         const response = await request(app).get('/count');
         expect(response.statusCode).toBe(200);
         expect(response.text).toBe('1');
+    });
 
+    afterAll((): void => {
         app.locals.settings.redis.quit();
     });
 });
