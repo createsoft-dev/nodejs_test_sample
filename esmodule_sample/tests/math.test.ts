@@ -10,12 +10,12 @@ describe('math', (): void => {
         expect(add_async(1, 2)).resolves.toBe(3);
     });
 
-    it('div async', (): void => {
-        expect(div_async(1, 2)).resolves.toBe(0.5);
+    it('div async', async (): Promise<void> => {
+        await expect(div_async(1, 2)).resolves.toBe(0.5);
     });
 
-    it('async 0 division is rejected', (): void => {
-        expect(div_async(1, 0)).rejects.toThrow(
+    it('async 0 division is rejected', async (): Promise<void> => {
+        await expect(div_async(1, 0)).rejects.toThrow(
             'zero division',
         );
     });
